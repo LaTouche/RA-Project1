@@ -1,0 +1,409 @@
+.container {
+   padding: 0 2%;
+   margin: 0 auto;
+   max-width: 1240px;
+   width: 100%;
+}
+
+.flex-container{
+    display: inline-flex;
+}
+
+.clearfix:before,
+.clearfix:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+.header-pad{
+	padding-bottom: .5rem;
+	padding-top: 1rem;
+}
+
+.logo {
+  width: 18%;
+	/*width:200px;*/
+	float: left;
+}
+
+.cart {
+  width: 6%;
+	/*width: 65px;*/
+	float: right;
+  padding-right: 4%;
+}
+
+.banner {
+	width: 100%;
+	background: linear-gradient(rgba(0,0,0,0.3),transparent),
+	url("assets/images/banner-girl.png") center bottom,
+	url("assets/images/flower-bkgd.jpg") center;
+	background-size: cover, /*230px 510px*/ 18% 90%, contain;
+	background-repeat: no-repeat, no-repeat, repeat-x;
+	background-position: relative, absolute, relative;
+	bottom: 0px;
+}
+
+.banner-text {
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	padding: 18% 0;
+}
+
+.banner-h1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1rem;
+}
+
+.banner-h2 {
+	font-family: 'Playfair display', serif;
+	font-size: 3.3rem;
+	line-height: 2;
+}
+
+.text-shadow {
+	text-shadow: 0.04em 0.05em #656565;
+}
+
+.fontPD {
+	font-family: 'Playfair Display', serif;
+}
+
+.fontR {
+	font-family: 'Raleway', sans-serif;
+}
+
+.about {
+	text-align: center;
+	border-bottom: 1px solid #A9A9A9;
+}
+
+.h3-text {
+	font-size: 2.5rem;
+	line-height: 250%;
+	padding: 3%;
+	margin-bottom: 2%;
+	font-style: italic;
+	font-weight: normal;
+	font-family: 'Playfair display', serif;
+}
+span {
+	font-style: normal;
+	font-weight: bold;
+	font-family: 'Playfair display', serif;
+}
+
+.h3-text p {
+	font-size: 1rem;
+	/*padding-top: 5%;*/
+	line-height: 200%;
+	/*font-style: normal;*/
+}
+
+.products {
+	text-align: center;
+	padding-top: 1%;
+	padding-bottom: 6%
+}
+
+.item-width-25 li {
+	float: left;
+	text-align: center;
+	width: 25%;
+}
+
+.item-width-25 h4 {
+	font-size: 1.35rem;
+	color:#ff4040;
+	padding-top:15px;
+	padding-bottom: 15px;
+}
+
+.item-width-25 h1 {
+	font-size:0.6rem;
+	color: #969696;
+}
+
+.item-width-25 p {
+   color: #969696;
+   font-size: 0.75rem;
+   font-weight: bold;
+}
+
+
+.signup {
+	background: linear-gradient(rgba(0,0,0,0.3),transparent),
+	url("assets/images/wave-bkgd.jpg") center bottom no-repeat;
+	min-height: 35vh;
+}
+
+.subscription{
+	text-align: center;
+	padding: 5% 0;
+}
+
+
+.subscription h3 {
+	font-size: 2rem;
+	line-height: 250%;
+	padding: 2% 0 0%;
+	font-style: italic;
+	color: white;
+}
+
+
+.subscription p {
+	font-size: 1rem;
+	line-height: 200%;
+	font-style: normal;
+	font-family: 'Raleway', sans-serif;
+	color: white;
+}
+
+.line-break {
+	padding-bottom: 3%;
+}
+
+.sub-Form {
+	padding: 0.3rem;
+	border-radius: 50px;
+	background-color: white;
+	width: 50%;
+	/*margin-left: 22%;*/
+	margin-top: 15px;
+	/*position: absolute;*/
+	text-align: center;
+	display: inline-block;
+}
+
+
+.email {
+	border-radius: 10px;
+    padding: 5px 10px;
+    width: 65%;
+    min-height: 1.25rem;
+    float: left;
+    border: none;
+}
+
+.submitButton {
+	border-radius: 50px;
+    background-color: #ff4040;
+    width: 19%;
+    font-size: 0.875rem;
+    padding: 1.5%;
+    float: right;
+    color: white;
+    border:none;
+}
+
+.footer {
+   background-color: #262626;
+   color: white;
+   font-family: 'Playfair Display Web', serif;
+   /*padding: 4rem 0;*/
+   padding-top: 3rem;
+   padding-bottom: 3rem;
+   margin-top: 0.8%;
+   width: 100%;
+}
+
+.footer a {
+   color: white;
+}
+
+
+.contactUs {
+   float: left;
+   line-height: 150%;
+   padding: 0px 5%;
+}
+
+.contact,
+.phone {
+   margin-bottom: 1rem;
+}
+
+.address {
+   color: #9e9e9e;
+}
+
+.social {
+   float: right;
+   /*font-family: 'Raleway', sans-serif;*/
+   padding-right: 4rem;
+   line-height: 150%;
+}
+
+.social a {
+  text-decoration: none;
+}
+
+.social i {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.social span  {font-family: 'Raleway', sans-serif;
+font-weight: lighter;}
+
+/*MOBILE RESPONSIVE SETTINGS!!!!!*/
+
+@media only screen and (min-width: 600) {
+
+.logo {
+    width: 25%;
+    float: left;
+    padding-right: 1%;
+}
+
+.cart {
+    width: 9%;
+    float: right;
+    padding-right: 4%;
+}
+
+.text-shadow {
+    text-shadow: 0.04em 0.03em #656565;
+}
+
+.banner-h1 {
+    font-size: 1.2rem;
+}
+
+.banner-h2 {
+    font-size: 2.6rem;
+    line-height: 2;
+}
+
+.about {
+	padding: 6% 0 9% 0;
+}
+.h3-text {
+    line-height: 260%;
+ }
+
+.h3-text p {
+    line-height: 248%;
+ }
+
+.products {
+	padding-top: 6%;
+}
+
+.item-width-25 li {
+    float: left;
+    text-align: center;
+    width: 25%;
+    clear: both;
+    display: inline-block;
+    padding-bottom: 7%;
+}
+
+.flex-container{
+    display: inline-flex;
+}
+
+.signup {
+    min-height: 37vh;
+}
+
+.subscription p {
+    font-size: 1.05rem;
+    padding: 0px 2%;
+}
+
+.submitButton {
+    width: 25%;
+    font-size: 0.685rem;
+    color: white;
+}
+
+.contactUs {
+	padding: 6% 0%;
+	display: block;
+	clear: both;
+	width: 100%;
+	font-size: 1.3rem;
+}
+
+.contact, .phone {
+    margin-bottom: 1rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.address {
+    text-align: center;
+    vertical-align: middle;
+}
+.social {
+    margin: auto;
+    width: 75%;}
+
+.social span {
+	display:none;
+}
+
+.social ul {
+   /* list-style: none;*/
+    display: flex;
+    text-align: center;
+    margin: auto;
+    padding: 0 33%;
+}
+}
+
+/*TABLET RESPONSIVE CSS!!!!!*/
+@media only screen and (min-width: 1050px){
+
+.logo {
+    width: 16%;
+    float: left;
+}
+
+.cart {
+    width: 5%;
+    float: right;
+    padding-right: 4%;
+}
+
+.banner-h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+}
+
+.banner-h2 {
+    font-size: 3.5rem;
+}
+
+.item-width-25 li {
+    float: left;
+    text-align: center;
+    width: 25%;
+    clear: none;
+}
+
+.flex-container{
+    display: inline-flex;
+}
+
+.signup {
+    min-height: 45vh;
+}
+.contactUs {
+    padding: 0px 8%;
+}
+
+.social {
+    padding-right: 5rem;
+}
+
+}
+
+
+
+
+
